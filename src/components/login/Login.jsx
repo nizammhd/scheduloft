@@ -22,7 +22,8 @@ const LoginForm = () => {
   }
 
   return (
-    <div className="main">
+    <div className='outerLogin'>  
+        <div className="main">
       <input type="checkbox" id="chk" aria-hidden="true" />
 
       <div className="signup">
@@ -44,6 +45,8 @@ const LoginForm = () => {
         </form>
       </div>
     </div>
+    </div>
+
   );
 };
 
