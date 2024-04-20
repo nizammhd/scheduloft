@@ -4,7 +4,6 @@ border: 1px solid ;
 min-height: 300px;
 border-radius: 20px;
 overflow: hidden;
-padding: 10px;
 float: left;
 margin: 20px;
 
@@ -12,7 +11,30 @@ margin: 20px;
 
 .card-main h2{
    color: black;
+   margin-left: 10px;
 }
 .card-main h3{
     color: grey;
+    margin-left: px;
+}
+.headdr{
+   
+    text-align: center;
+    background-color: #007bff; /* Change to your desired header background color */
+    color: #ffffff; /* Change to your desired header text color */
+    padding: 20px 0;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-bottom: 50px;
+
+
+}
+.cardouter{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.card-main h5{
+    margin-left: 10px;
 }

@@ -1,14 +1,20 @@
 import React, { useRef } from 'react'
 import './Home.css'
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
     const cardOuterRef = useRef(null);
+    const nav=useNavigate()
 
   const scrollToCardOuter = () => {
     if (cardOuterRef.current) {
       cardOuterRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  function navigate(){
+    nav('/dr')
+
+  }
 
   return (
     
@@ -28,7 +34,7 @@ function Home() {
                 </div>
             </div>
             <div ref={cardOuterRef}  >
-            <div className='card' id='cardouter'>
+            <div className='card' id='cardouter' onClick={navigate}>
                 <img src="https://t4.ftcdn.net/jpg/02/60/04/09/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg" alt="picture of doctor" />
                 <h2>DOCTOR</h2>
             </div>
