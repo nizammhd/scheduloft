@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Home.css'
 
 function Home() {
+    const cardOuterRef = useRef(null);
+
+  const scrollToCardOuter = () => {
+    if (cardOuterRef.current) {
+      cardOuterRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
+    
     <div>
         <div className='outer'>
             <div className='hometext'>
@@ -11,14 +20,15 @@ function Home() {
              
                 <h1>Virtual waitlist<br/><span></span> without the wait</h1>
                 <p>Revamp your customer flow with hassle-free virtual queues,<br/> intelligent wait times, and automated queue management.<br/> Set up a virtual waitlist in minutes.</p>
-                <button>Explore</button>
+                <button onClick={scrollToCardOuter}>Explore</button>
                    
             </div>
             <div className="imagehome">
                 <img src="https://trifork.com/wp-content/uploads/2023/12/Virtuelle-ventevaerelse-3-950x594.png" alt="wait " />
                 </div>
             </div>
-            <div className='card'>
+            <div ref={cardOuterRef}  >
+            <div className='card' id='cardouter'>
                 <img src="https://t4.ftcdn.net/jpg/02/60/04/09/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg" alt="picture of doctor" />
                 <h2>DOCTOR</h2>
             </div>
@@ -34,6 +44,7 @@ function Home() {
                 <img src="https://img.grouponcdn.com/bynder/3yVmdamquoQej7rcgUNpo1bBXFeS/3y-2048x1229/v1/c870x524.jpg" alt="picture of barber" />
                 <div className='cardname'>
                 <h2>BEAUTICIAN</h2>
+                </div>
                 </div>
                
             </div>
