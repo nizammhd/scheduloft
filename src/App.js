@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import LoginForm from './components/login/Login'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Mycontext } from './components/context';
@@ -8,9 +8,12 @@ import User from './components/User';
 import Stock from './components/Stock';
 import StockAdmin from './components/StockAdmin';
 import Otp from './components/Otp';
+import { productData } from './components/products';
 
 function App() {
-const values=[]
+  const[prod,setprod]=useState(productData)
+  const[ration,setration]=useState('')
+const values={prod,setprod,ration,setration}
   return (
     <div>
       <BrowserRouter>

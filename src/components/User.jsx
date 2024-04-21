@@ -1,9 +1,10 @@
 // User.js
 
 import React, { useContext } from 'react';
-import { Mycontext } from '../context';
+
 import './user.css';
 import { useNavigate } from 'react-router-dom';
+import { Mycontext } from './context';
 
 function User() {
   const { store } = useContext(Mycontext);

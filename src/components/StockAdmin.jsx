@@ -3,7 +3,7 @@ import "./stock.css";
 import { Mycontext } from './context';
 
 function StockAdmin() {
-    const { prod, setProd } = useContext(Mycontext);
+    const { prod, setprod } = useContext(Mycontext);
 
     // Function to toggle availability
     const toggleAvailability = (id) => {
@@ -13,7 +13,7 @@ function StockAdmin() {
             }
             return product;
         });
-        setProd(updatedProducts);
+        setprod(updatedProducts);
     };
 
     // Function to increase quantity by 10
@@ -24,7 +24,7 @@ function StockAdmin() {
             }
             return product;
         });
-        setProd(updatedProducts);
+        setprod(updatedProducts);
     };
 
     return (
