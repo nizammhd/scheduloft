@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './login.css'
 import Signup from '../signup/Signup';
 import { useNavigate } from 'react-router-dom';
+import Nav from '../Nav';
 // You can create a separate CSS file for styling
 
 const LoginForm = () => {
@@ -24,15 +25,18 @@ const LoginForm = () => {
     if(name==="admin")
     {
       nav('/stockadmin')
+      alert('logined as admin')
     }else{
       nav('/otp')
+      alert('welcome user')
     }
     
 
   }
 
   return (
-    <div className='outerLogin'>  
+    <div className='outerLogin'> 
+    <Nav /> 
         <div className="main">
       <input type="checkbox" id="chk" aria-hidden="true" />
 

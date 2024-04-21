@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import "./stock.css";
 import { Mycontext } from './context';
+import Nav from './Nav';
 
 function Stock() {
     const { prod, setProd } = useContext(Mycontext);
@@ -19,6 +20,7 @@ function Stock() {
 
     return (
         <div>
+            <Nav />
             <div className='outer-stock'>
                 <h2>Item Availability</h2>
                 <table className='table-stock'>
@@ -45,7 +47,12 @@ function Stock() {
                         ))}
                     </tbody>
                 </table>
+                <h3>Note: If the product you want is not available, please check the link below and find another shop.</h3>
+                <a href='https://www.google.com/maps/search/near+ration+shop/@10.9317935,76.1621891,14z?entry=ttu'><button>click here</button></a>
+                
+
             </div>
+
         </div>
     );
 }

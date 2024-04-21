@@ -5,12 +5,15 @@ import React, { useContext } from 'react';
 import './user.css';
 import { useNavigate } from 'react-router-dom';
 import { Mycontext } from './context';
+import Nav from './Nav';
 
 function User() {
   const { store } = useContext(Mycontext);
   const nav = useNavigate();
 
   return (
+    <div>
+        <Nav/>
     <div className="user-container">
       <div className='image-user'>
         <img src="https://www.thesun.co.uk/wp-content/uploads/2024/04/crop-27435668.jpg?strip=all&w=620&h=413&crop=1" alt="Profile" />
@@ -64,6 +67,7 @@ function User() {
         </table>
         <button onClick={() => nav('/stock')}>Available Stock</button>
       </div>
+    </div>
     </div>
   );
 }

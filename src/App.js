@@ -9,6 +9,7 @@ import Stock from './components/Stock';
 import StockAdmin from './components/StockAdmin';
 import Otp from './components/Otp';
 import { productData } from './components/products';
+import Nav from './components/Nav';
 
 function App() {
   const[prod,setprod]=useState(productData)
@@ -25,6 +26,7 @@ const values={prod,setprod,ration,setration}
          <Route path='/stock' element={<Stock />}></Route>
          <Route path='/stockadmin' element={<StockAdmin />}></Route>
          <Route path='/otp' element={<Otp />}></Route>
+         <Route path='/nav' element={<Nav />}></Route>
            </Routes>
            </Mycontext.Provider>
       </BrowserRouter>

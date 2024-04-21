@@ -1,11 +1,13 @@
 import React from 'react'
 import "./otp.css"
 import { useNavigate } from 'react-router-dom'
+import Nav from './Nav'
 
 function Otp() {
   const nav=useNavigate()
   return (
     <div className='outer-otp' >
+        <Nav/>
       <div className='box-otp'>
         <h3>OTP-VERIFICATION</h3>
 

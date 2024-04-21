@@ -10,7 +10,7 @@ export const productData=[{
     item: "black beans",
     price: 8,
     quantity: 10,
-    Availability: "yes"
+    Availability: false
   },{
     id: 3,
     item: "oil",
