@@ -21,3 +21,18 @@ export const dummyData = [
     { doctorname: 'Dr. Amanda Clark', category: 'Obstetrics & Gynecology', image: 'https://t3.ftcdn.net/jpg/01/14/89/28/360_F_114892812_Va0KWhvmSUOoYNEoHCAOJ8uYXzBiD8vY.jpg' },
 ];
 
+<<<<<<< HEAD
+=======
+export const beautyData = [
+    { beauticianName: 'Sara Beauty Salon', specialty: 'Hair Styling', image: "https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg" },
+    { beauticianName: 'Emilys Beauty Boutique', specialty: 'Makeup Artistry', image: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1713484800&semt=sph' },
+    { beauticianName: 'Sophias Spa Retreat', specialty: 'Facial Treatments', image: 'https://www.stryx.com/cdn/shop/articles/man-looking-attractive.jpg?v=1666662774'},
+    { beauticianName: 'Lilys Beauty Haven', specialty: 'Nail Art', image: 'https://static.toiimg.com/photo/93910698.cms' },
+    { beauticianName: 'Olivias Glam Studio', specialty: 'Eyelash Extensions', image: 'https://images.unsplash.com/photo-1611608822650-925c227ef4d2?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { beauticianName: 'Emmas Skincare Clinic', specialty: 'Waxing Services', image: 'https://images.unsplash.com/photo-1600804889194-e6fbf08ddb39?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { beauticianName: 'Isabellas Beauty Lounge', specialty: 'Body Treatments', image: 'https://www.shutterstock.com/image-photo/side-view-young-happy-smiling-600nw-462825271.jpg' },
+    { beauticianName: 'Chloes Makeup Studio', specialty: 'Bridal Makeup', image: 'https://images.unsplash.com/photo-1587944308214-cb558d66cfe6?q=80&w=2010&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { beauticianName: 'Avas Hair & Beauty Bar', specialty: 'Hair Extensions', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { beauticianName: 'Graces Nail Spa', specialty: 'Manicures and Pedicures', image: 'https://st3.depositphotos.com/13193824/19336/i/450/depositphotos_193368390-stock-photo-portrait-handsome-stylish-young-african.jpg' }
+];
+>>>>>>> hub/main

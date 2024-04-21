@@ -7,6 +7,7 @@ function DrCard() {
 
   return (
     <div>
+<<<<<<< HEAD
       <div className="headdr">
         <h1>DOCTORS LIST </h1>
       </div>
@@ -26,6 +27,19 @@ function DrCard() {
       </div>
     </div>
   );
+=======
+        {doctorData.map((data)=>
+         <div className='card-main' key={data.id} >
+               <img style={{width:"100%",height:"200px",borderRadius:"0px",objectFit:"cover"}} src={data.image} alt="" />
+               <h2>{data.doctorname}</h2>
+               <h5>{data.category}</h5>
+
+         </div>)
+}
+         </div>
+
+  )
+>>>>>>> hub/main
 }
 
 export default DrCard;
